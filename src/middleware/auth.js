@@ -17,7 +17,7 @@ export function verifyToken(req,res,next){
 
         token = token.split(" ")[1]; // Bearer token
 
-        let decoded = jwt.verify(token, process.env.SECRET_KEY);
+        let decoded = jwt.verify(token, process.env.JWT_SECRET);
 
         req.user = decoded;
 
