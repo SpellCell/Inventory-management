@@ -3,8 +3,8 @@ import express from "express";
 // controllers
 import createUser, { userLogin } from "../controller/user_controller.js";
 import { createProduct, getProducts } from "../controller/product_controller.js";
-import { createSupplier } from "../controller/supplier_controller.js";
-import { createPurchase } from "../controller/purchase_controller.js";
+//import { createSupplier } from "../controller/supplier_controller.js";
+//import { createPurchase } from "../controller/purchase_controller.js";
 import { createSale } from "../controller/sale_controller.js";
 import { getInventorySummary } from "../controller/inventory_controller.js";
 import { deleteProduct } from "../controller/product_controller.js";
@@ -33,7 +33,7 @@ router.delete("/product/:id", deleteProduct);
 
 
 // supplier routes
-router.post("/supplier", checkAdmin, createSupplier);
+//router.post("/supplier", checkAdmin, createSupplier);
 
 
 // purchase routes
