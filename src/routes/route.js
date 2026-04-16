@@ -52,10 +52,10 @@ router.get("/inventory", getInventorySummary);
 
 
 // setting routes
-router.get("/user/profile", verifyToken, getProfile);
-router.put("/user/profile", verifyToken, updateProfile);
-router.put("/user/password", verifyToken, updatePassword);
-router.put("/user/settings", verifyToken, updateSettings);
+router.get("/user/profile",  getProfile);
+router.put("/user/profile",  updateProfile);
+router.put("/user/password", updatePassword);
+router.put("/user/settings",  updateSettings);  //verifyToken,
 
 
 export default router;
