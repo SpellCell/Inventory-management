@@ -5,7 +5,7 @@ export function checkAdmin(req,res,next){
 
     try{
 
-        let token = req.headers.authorization;
+        let token = req.headers.authorization;  
 
         if(!token){
             return res.status(StatusCodes.UNAUTHORIZED.code).json({
